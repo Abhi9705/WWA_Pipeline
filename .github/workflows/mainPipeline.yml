@@ -24,7 +24,7 @@ jobs:
    # needs: Running_backend
     runs-on: ubuntu-latest
     steps:
-      - name: getting code
+      - name: getting codes
         uses: actions/checkout@v4
       - name: installing nodejs
         uses: actions/setup-node@v4
