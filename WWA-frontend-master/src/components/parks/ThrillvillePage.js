@@ -41,7 +41,7 @@ const ThrillvillePage = ({ setActiveTemplate, onSave }) => {
             onSave(selectedAdventures);
             setActiveTemplate('userdetails');
         }
-    };
+    };//just for testing
 
     return (
         <div className='container-fluid mt-5'>
