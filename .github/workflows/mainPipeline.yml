@@ -3,7 +3,7 @@ name: frontend-master workflow
 on: 
   push:
     branches:
-      - "main"
+      - "newfeature_branch"
   pull_request:
     types:
       - "opened"
