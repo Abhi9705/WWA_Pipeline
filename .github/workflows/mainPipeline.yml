@@ -58,8 +58,5 @@ jobs:
           npm run docs
 
 
-  Running_Docker_Container:
-    runs-on: ubuntu-latest
-    container: 
-      image: pavanvarikolu/wwafrontend:v1.0
+
    
