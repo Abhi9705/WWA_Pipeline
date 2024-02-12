@@ -56,7 +56,18 @@ jobs:
           npm install -g jsdoc
           npm install 
           npm run docs
+  
 
+  Running_docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling image from docker 
+        run: docker pull pavanvarikolu/wwafrontend:v1.0
+
+      - name: building container
+        run: docker run --name wwafrontendapp -p 3000:3000 -d pavanvarikolu/wwafrontend:v1.0
+
+  
 
 
    
