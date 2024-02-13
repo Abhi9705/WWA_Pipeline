@@ -55,16 +55,7 @@ jobs:
           cd /home/runner/work/WWA_Pipeline/WWA_Pipeline/WWA-frontend-master
           npm install -g jsdoc
           npm install 
-          npm run docs
-
-      
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
-        with:
-          branch: newfeature_branch
-          folder:   /home/runner/work/WWA_Pipeline/WWA_Pipeline/WWA-frontend-master/out
-
-  
+          npm run docs  
 
   Running_docker:
     runs-on: ubuntu-latest
