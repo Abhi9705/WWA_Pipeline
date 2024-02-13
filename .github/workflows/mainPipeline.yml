@@ -60,7 +60,7 @@ jobs:
   Running_docker:
     runs-on: self-hosted
     steps:
-      - name: pulling image from docker 
+      - name: pulling image from docker hub 
         run: docker pull pavanvarikolu/wwafrontend:v1.0
 
       - name: Deleting old contanier 
