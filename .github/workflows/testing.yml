@@ -10,11 +10,7 @@ jobs:
 
     name: Scan the webapplication
 
-    permissions:
-
-       contents: write
-
-       pull-requests: write
+    permissions: write-all
 
     steps:
 
