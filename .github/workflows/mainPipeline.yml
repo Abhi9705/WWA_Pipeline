@@ -55,7 +55,7 @@ jobs:
           cd /home/runner/work/WWA_Pipeline/WWA_Pipeline/WWA-frontend-master
           npm install -g jsdoc
           npm install 
-          npm run jsdoc
+          npm run docs
 
   Running_docker:
     runs-on: self-hosted
@@ -69,7 +69,7 @@ jobs:
       - name: building container
         run: docker run --name wwafrontendapp -p 3000:3000 -d pavanvarikolu/wwafrontend:v1.0
 
-  
+
 
 
    
