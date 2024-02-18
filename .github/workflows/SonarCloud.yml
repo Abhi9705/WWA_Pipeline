@@ -1,8 +1,5 @@
 name: "sonar_cloud_scan_github_actions"
-on:
-   push:
-      branches:
-        - "newfeature_branch"
+on: push
 
 
 
@@ -12,9 +9,9 @@ jobs:
   DemoSonarCloudSCan:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
-            fetch-depth: 0
+          ref: newfeature_branch 
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
         env:
@@ -23,7 +20,7 @@ jobs:
         with:
           args: >
               -Dsonar.organization=Abhishek_Sharma
-              -Dsonar.projectKey=WWA_Pipeline
+              -Dsonar.projectKey=Abhishek_Sharma_abhishek-sharma
              #-Dsonar.python.coverage.reportPaths=coverage.xml
                 # Example step to work with scan results - placeholder for custom logic
 
