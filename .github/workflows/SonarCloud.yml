@@ -20,7 +20,7 @@ jobs:
         with:
           args: >
               -Dsonar.organization=Abhishek_Sharma
-              -Dsonar.projectKey=Abhishek_Sharma_abhishek-sharma
+              -Dsonar.projectKey=abhishek-sharma
              #-Dsonar.python.coverage.reportPaths=coverage.xml
                 # Example step to work with scan results - placeholder for custom logic
 
